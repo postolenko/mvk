@@ -9,11 +9,15 @@ $(document).ready(function() {
 
     // ----------------------------
 
+    var promoBottomCoord
+
+    // ----------------------------
+
     var setFooterPositionInterval;
     var contentCoor;
     var footerCoor;
 
-    // ----------------------------
+    // ----------------------------    
 
     getAdaptivePositionElements();
 
@@ -67,6 +71,10 @@ $(document).ready(function() {
 
         $(".respmenubtn").click(function() {
 
+            promoBottomCoord = $("#promo").offset().top + $("#promo").height();
+
+            parentBlock = $(this).closest(".respmenubtn-block");
+
             if($(".responsive-header").is(":hidden")) {
 
                 $(".responsive-header").fadeIn(300);
@@ -76,6 +84,13 @@ $(document).ready(function() {
 
                 $(".responsive-header").fadeOut(300);
                 $(this).removeClass("active");
+
+                if( bodyWidth > 900  &&  promoBottomCoord > $(window).scrollTop()
+                    &&  parentBlock.is(":visible")) {
+
+                    parentBlock.fadeOut(300);
+
+                }
 
             }
 
@@ -153,19 +168,25 @@ $(document).ready(function() {
 
         if( $("#promo").length > 0 ) {
 
-            var promoBottomCoord = $("#promo").offset().top + $("#promo").height();
+            promoBottomCoord = $("#promo").offset().top + $("#promo").height();
 
-            if( promoBottomCoord >= $(window).scrollTop() ) {
+            if( $(window).scrollTop() < promoBottomCoord ) {
 
-                $(".respmenubtn").removeClass("ligth");
+                $(".respmenubtn-block").addClass("light");
+
+                if( bodyWidth > 900 && $(".respmenubtn-block").is(":visible") && !$(".respmenubtn-block").find(".respmenubtn").hasClass("active")) {
+                    $(".respmenubtn-block").fadeOut(300);
+                }
 
             } else {
 
-                $(".respmenubtn").addClass("ligth");
+                $(".respmenubtn-block").removeClass("light");
+
+                if( bodyWidth > 900 || $(".respmenubtn-block").is(":hidden") ) {
+                    $(".respmenubtn-block").fadeIn(300);
+                }
 
             }
-
-            console.log($("#promo").offset().top + $("#promo").height() +"    "+ $(document).scrollTop());
 
         }
 

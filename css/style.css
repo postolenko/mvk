@@ -703,8 +703,8 @@ a.lang:hover {
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn-block {
-    display: block;
-    /*display: none;*/
+    /*display: block;*/
+    display: none;
     height: 32px;
     width: 32px;
     position: fixed;
@@ -752,7 +752,7 @@ a.lang:hover {
     transition-timing-function: ease;
 }
 
-.respmenubtn.light span {
+.respmenubtn-block.light .respmenubtn span {
     background: #ffffff;
 }
 
