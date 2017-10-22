@@ -14,12 +14,13 @@ $(document).ready(function() {
 
 		$(".main-slider").not(".slick-initialized").slick({
 			dots: true,
-			arrows: false,
-			// autoplay: true,
+			arrows: true,
+			autoplay: true,
 			autoplaySpeed: 10000,
 			speed: 1200,
 			slidesToShow: 1,
-			fade: true
+			fade: true,
+			appendDots: $(".main-slider-dots-append")
 		});
 
 
@@ -51,6 +52,12 @@ $(document).ready(function() {
 			var indexSlideNext = $(this).closest("li").index();
 
 			$(".main-slider").find(".slick-dots li:eq("+ indexSlideNext +") button").click();
+
+		});
+
+		$(".next-slide-btn").click(function() {
+
+			$(".main-slider").find(".slick-next").click();
 
 		});
 

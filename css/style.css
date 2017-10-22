@@ -337,11 +337,7 @@ header p {
 
 .slick-dots {
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: .01;
+    padding: 0 40px;
 }
 
 .slick-dots li {
@@ -349,18 +345,18 @@ header p {
     vertical-align: top;
     cursor: pointer;
     background: transparent;
-    padding: 7px;
+    padding: 7px 3%;
 }
 
 .slick-dots li button {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 7px;
+    height: 7px;
     cursor: pointer;
     font-size: 0;
     line-height: 0;
-    border: 2px solid #2ed89d;
-    background: rgba(41, 222, 216, 0);
+    border: 1px solid #262626;
+    background: transparent;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -389,7 +385,34 @@ header p {
 }
 
 .slick-dots li.slick-active button {
-    background: rgba(41, 222, 216, 1);
+    background: #262626;
+}
+
+.slick-arrow {
+    display: block;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -3px;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.slick-prev {
+    left: 2%;
+}
+
+.slick-next {
+    right: 2%;
+}
+
+.slick-arrow img {
+    display: block;
+    width: auto;
+    hyphens: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /*-- /Slick --*/
@@ -639,6 +662,10 @@ a.lang:hover {
 
 .lang-list li a:hover {
     border-bottom: 2px solid #ffffff;
+}
+
+.lang-list li a.resp-lang {
+    display: none;
 }
 
 .resp-nav-block {
@@ -894,6 +921,7 @@ a.lang:hover {
     vertical-align: middle;
     width: 98%;
     text-align: center;
+    padding: 100px 0;
 }
 
 .center h1 {
@@ -1029,6 +1057,12 @@ a.lang:hover {
 
 }
 
+.main-slider-block .slick-arrow {
+    opacity: 0;
+    top: -24px;
+    z-index: -1;
+}
+
 .main-slider-pagination {
     margin: 5px 0;
     text-align: center;
@@ -1106,6 +1140,35 @@ a.lang:hover {
     color: #262626;
 }
 
+.main-slider-dots-append {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .01;
+}
+
+.next-slide-btn {
+    /*display: block;*/
+    display: none;
+    width: 16px;
+    height: 23px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: transparent;
+    background-image: url(../img/chevron_right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.main-slider-block .next-slide-btn {
+    position: absolute;
+    top: 101px;
+    right: 2%;
+    z-index: 2;
+}
+
 .main-slider {
     margin: 104px 0 78px 0;
 }
@@ -1126,6 +1189,20 @@ a.lang:hover {
 .main-slider .slide .col-2 {
     width: 54%;
     padding: 18px 0 0 2%;
+}
+
+.resp-icon-box {
+    display: block;
+    width: 99px;
+    height: 100px;
+}
+
+.resp-icon-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .main-slider .slide h3 {
