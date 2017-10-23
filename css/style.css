@@ -254,7 +254,6 @@ a {
     line-height: 16px;
     font-weight: 500;
     color: #262626;
-    margin: 9px 0;
 }
 
 img {
@@ -605,6 +604,21 @@ a.lang:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#37b9c1", endColorstr="#40e663",GradientType=1 );
 }
 
+.responsive-header .col {
+
+}
+
+.responsive-header .col-1 {
+    width: 25%;
+    padding-top: 23px;
+}
+
+.responsive-header .col-2 {
+    width: 50%;
+    text-align: center;
+}
+
+
 .lang-list {
     margin: 36px 0;
     text-align: center;
@@ -619,7 +633,7 @@ a.lang:hover {
 .lang-list li a {
     display: inline-block;
     vertical-align: top;
-    padding: 0 5px 7px 2px;
+    padding: 0 5px 8px 2px;
     font-family: "Gotham", Arial, Verdana, sans-serif;
     font-size: 16px;
     line-height: 16px;
@@ -666,22 +680,23 @@ a.lang:hover {
 
 .lang-list li a.resp-lang {
     display: none;
+    padding-bottom: 6px;
 }
 
 .resp-nav-block {
-    margin: 45px 0;
+    margin: 45px 0 27px 0;
 }
 
 .resp-nav-block li {
     display: block;
-    padding: 0 2%;
+    padding: 17px 2%;
     text-align: center;
 }
 
 .resp-nav-block li a {
     display: inline-block;
     vertical-align: top;
-    padding: 0 0 17px 0;
+    padding: 0 0 18px 0;
     font-family: "Gotham", Arial, Verdana, sans-serif;
     font-size: 35px;
     line-height: 35px;
@@ -735,7 +750,7 @@ a.lang:hover {
     height: 32px;
     width: 32px;
     position: fixed;
-    top: 56px;
+    top: 57px;
     right: 2%;
     z-index: 14;
 }
@@ -942,7 +957,7 @@ a.lang:hover {
     display: block;
     width: 16px;
     height: 20px;
-    padding: 31px 0;
+    padding: 30px 0;
 }
 
 .socials li a {
@@ -980,7 +995,7 @@ a.lang:hover {
 @keyframes mouse {
 
     0% {
-        bottom: 5%;
+        bottom: 7%;
     }
 
     50% {
@@ -988,7 +1003,7 @@ a.lang:hover {
     }
 
     100% {
-        bottom: 5%;
+        bottom: 7%;
     }
 
 }
@@ -996,7 +1011,7 @@ a.lang:hover {
 @-webkit-keyframes mouse {
 
     0% {
-        bottom: 5%;
+        bottom: 7%;
     }
 
     50% {
@@ -1004,7 +1019,7 @@ a.lang:hover {
     }
 
     100% {
-        bottom: 5%;
+        bottom: 7%;
     }
 
 }
@@ -1012,7 +1027,7 @@ a.lang:hover {
 @-moz-keyframes mouse {
 
     0% {
-        bottom: 5%;
+        bottom: 7%;
     }
 
     50% {
@@ -1020,7 +1035,7 @@ a.lang:hover {
     }
 
     100% {
-        bottom: 5%;
+        bottom: 7%;
     }
 
 }
@@ -1028,7 +1043,7 @@ a.lang:hover {
 @-o-keyframes mouse {
 
     0% {
-        bottom: 5%;
+        bottom: 7%;
     }
 
     50% {
@@ -1036,7 +1051,7 @@ a.lang:hover {
     }
 
     100% {
-        bottom: 5%;
+        bottom: 7%;
     }
 
 }
@@ -1064,7 +1079,7 @@ a.lang:hover {
 }
 
 .main-slider-pagination {
-    margin: 5px 0;
+    margin: 10px 0;
     text-align: center;
 }
 
@@ -1132,7 +1147,7 @@ a.lang:hover {
 }
 
 .main-slider-pagination li a p {
-    padding: 17px 0 11px 0;
+    padding: 20px 0 12px 0;
     font-family: "Gotham", Arial, Verdana, sans-serif;
     font-size: 18px;
     line-height: 18px;
@@ -1170,7 +1185,7 @@ a.lang:hover {
 }
 
 .main-slider {
-    margin: 104px 0 78px 0;
+    margin: 112px 0 78px 0;
 }
 
 .main-slider .slide {
@@ -1192,9 +1207,9 @@ a.lang:hover {
 }
 
 .resp-icon-box {
-    display: block;
-    width: 99px;
+    display: none;
     height: 100px;
+    width: 98px;
 }
 
 .resp-icon-box img {
@@ -1206,13 +1221,87 @@ a.lang:hover {
 }
 
 .main-slider .slide h3 {
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 2px solid transparent;
+    padding: 0 0 16px 0;
     font-family: "Gotham", Arial, Verdana, sans-serif;
     font-size: 35px;
     line-height: 45px;
     font-weight: bold;
     color: #262626;
-    padding: 0 0 10px 0;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
 }
+
+.main-slider .article:hover h3 {
+    border-bottom: 2px solid #262626;
+}
+
+/*
+.article-title {
+    border-bottom: 2px solid transparent;
+    padding: 0 0 6px 0;
+    font-family: "Gotham", Arial, Verdana, sans-serif;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: bold;
+    color: #262626;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+
+}
+
+.article-title:link,
+.article-title:visited {
+    border-bottom: 2px solid transparent;
+}
+
+.article-title:active,
+.article-title.active {
+    border-bottom: 2px solid #262626;
+}
+
+.article-title:hover {
+    border-bottom: 2px solid #262626;
+}*/
 
 .main-slider .slide p {
     padding: 15px 0;
@@ -1228,8 +1317,8 @@ a.lang:hover {
     vertical-align: top;
     min-width: 246px;
     border: 2px solid #262626;
-    background: rgba(0, 0, 15, 0);
-    margin: 36px 0 10px 0;
+    background: rgba(0, 0, 15, 0);    
+    margin: 68px 0 16px 0;
     padding: 6px 2% 6px 35px;
     text-align: center;
     font-family: "Gotham", Arial, Verdana, sans-serif;
@@ -1386,7 +1475,7 @@ a.lang:hover {
 }
 
 .gallery {
-    margin: 64px 0 0 0;
+    margin: 65px 0 0 0;
 }
 
 .gallery .thumbnal {
@@ -1464,6 +1553,7 @@ a.lang:hover {
 }
 
 .services-thumbnails .inner {
+    display: block;
     text-align: center;
 }
 
@@ -1482,13 +1572,50 @@ a.lang:hover {
     max-height: 100%;
 }
 
-.services-thumbnails .thumbnal h3 {
-    padding: 5px 0;
+.services-thumbnails h3 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 0 1px 0;
     font-family: "Gotham", Arial, Verdana, sans-serif;
     font-size: 24px;
     line-height: 34px;
     font-weight: 500;
     color: #262626;
+}
+
+.services-thumbnails h3:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: relative;
+    bottom: 8px;
+    left: 0;
+    background: #262626;
+    opacity: 0;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.services-thumbnails .inner:hover h3:after {
+    opacity: 1;
 }
 
 .services-thumbnails .thumbnal p {
