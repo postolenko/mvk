@@ -123,6 +123,72 @@ $(document).ready(function() {
 
     // ----------------------------------------------
 
+    $(function() {
+
+        $(".show-popup").click(function(e) {
+
+            e.preventDefault();
+
+            var popupAttrName = $(this).attr("data-popup-name");
+
+            var popupBlock = $(".popup").filter("[data-popup = '"+ popupAttrName +"']");
+
+            if( popupBlock.is(":hidden") ) {
+
+                popupBlock.fadeIn(400);
+
+            }
+
+        });
+
+        $(".close-popup").click(function() {
+
+            var popupBlock = $(this).closest(".popup");
+
+            popupBlock.fadeOut(400);
+
+        });
+
+
+        $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27) {
+
+                $(".popup").each(function() {
+
+                    if ( $(this).is(":visible") ) {
+
+                        $(this).fadeOut(500);
+
+                    }
+
+                });
+
+
+                if ( $(".responsive-header").is(":visible") ) {
+
+                    $(".responsive-header").fadeOut(500);
+
+                    $(".respmenubtn").removeClass("active");
+
+                    if( bodyWidth > 900  &&  promoBottomCoord > $(window).scrollTop()
+                    &&  parentBlock.is(":visible")) {
+
+                        $(".respmenubtn-block").fadeOut(300);
+                    
+                    }
+
+                }
+
+
+            }
+
+        });
+
+    });
+
+    // ----------------------------------------------
+
     //  Gradient Animation
 
     var colors = new Array(

@@ -32,17 +32,22 @@
 
 @media only screen and (max-width: 1280px) {
 
+	h1 {
+	    font-size: 89px;
+	    line-height: 111px;
+	}
+
+	.form-block {
+	    max-width: 437px;
+	    margin: 72px auto 10px auto;
+	}
+
 	.main-nav-block li {
 	    padding: 0 13px;
 	}
 
 	.lang-block {
 	    padding: 0 0 0 13px;
-	}
-
-	h1 {
-	    font-size: 89px;
-	    line-height: 111px;
 	}
 
 }
@@ -101,13 +106,24 @@
 
 @media only screen and (max-width: 900px) {
 
+	h1 {
+	    font-size: 75px;
+	    line-height: 92px;
+	}
+
 	header {
 	    margin: 44px 0 25px 0;
 	}
 
-	h1 {
-	    font-size: 75px;
-	    line-height: 92px;
+	header h2 {
+	    font-size: 35px;
+	    line-height: 43px;
+	}
+
+	header h2:after {
+	    width: 60px;
+	    height: 4px;
+	    margin: 19px auto;
 	}
 
 	.socials-block {
@@ -416,19 +432,38 @@
 	    margin: 30px 0;
 	}
 
-	header h2 {
-	    font-size: 35px;
-	    line-height: 43px;
-	}
-
-	header h2:after {
-	    width: 60px;
-	    height: 4px;
-	}
-
 	header p {
 	    font-size: 16px;
 	    line-height: 33px;
+	}
+
+	.popup {
+	    padding: 11px 2%;
+	}
+
+	.close-popup {
+	    top: 0;
+	}
+
+	.form-block {
+	    margin: 33px auto 10px auto;
+	}
+
+	.input-block {
+	    padding: 10px 0;
+	}
+
+	textarea {
+	    height: 145px;
+	}
+
+	.white-transparent-pill {
+	    margin: 41px 0 16px 0;
+	}
+
+	.succes-block h1 {
+		font-size: 36px;
+		line-height: 50px;
 	}
 
 	.responsive-header {
