@@ -1,7 +1,27 @@
+@media only screen and (max-width: 2560px) {
+
+	.gallery .thumbnal .img-box {
+	    height: 500px;
+	}
+
+}
+
+@media only screen and (max-width: 1920px) {
+
+	.gallery .thumbnal .img-box {
+	    height: 400px;
+	}
+
+}
+
 @media only screen and (max-width: 1660px) {
 
 	.row {
 		padding: 0 2%;
+	}
+
+	.respmenubtn {
+	    right: 2%;
 	}
 
 	.socials-block {
@@ -225,6 +245,13 @@
 	    padding: 60px 0 0 0;
 	}
 
+	.main-slider .slide h3 {
+	    margin: 0;
+	    padding: 0 0 5px 0;
+		font-size: 30px;
+		line-height: 38px;		
+	}
+
 	.main-slider .slide .col-2 {
 	    display: none;
 	}
@@ -258,7 +285,7 @@
 	}
 
 	.services-thumbnails {
-		margin-bottom: 24px;
+		margin-bottom: 23px;
 	}
 
 	.services-thumbnails .thumbnal {
@@ -447,7 +474,7 @@
 	}
 
 	.socials-block {
-	    bottom: 4%;
+	    bottom: 2%;
 	}
 
 	.main-slider-pagination {
@@ -491,6 +518,7 @@
 	    font-weight: bold;
 	    color: #262626;
 	    padding: 7px 0 4px 0;
+	    border-bottom: none !important;
 	}
 
 	.main-slider .slide h3:after {
@@ -513,6 +541,10 @@
 
 	.gallery {
 	    margin: 78px 0 0 0;
+	}
+
+	.services-thumbnails {
+	    margin-bottom: 33px;
 	}
 
 	.footer .col-2 {
@@ -551,7 +583,7 @@
 
 	.services-thumbnails .thumbnal {
 	    width: 100%;
-	    margin: 28px 0 53px 0;
+	    margin: 28px 0 45px 0;
 	}
 
 	.services-thumbnails .icon-box {
@@ -574,7 +606,7 @@
 	.talk-block .talk-link {
 	    font-size: 35px;
 	    line-height: 35px;
-	    margin: 50px 0 0 0;
+	    margin: 51px 0 0 0;
 	}
 
 	.talk-block .talk-link:after {
