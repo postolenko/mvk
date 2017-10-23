@@ -96,6 +96,21 @@ $(document).ready(function() {
 
         });
 
+
+        $(".resp-nav-block a").click(function() {
+
+            $(".responsive-header").fadeOut(300);
+            $(".respmenubtn").removeClass("active");
+
+            if( bodyWidth > 900  &&  promoBottomCoord > $(window).scrollTop()
+                &&  $(".respmenubtn-block").is(":visible")) {
+
+                $(".respmenubtn-block").fadeOut(300);
+
+            }
+
+        });
+
     });
 
 
@@ -164,7 +179,6 @@ $(document).ready(function() {
 
                 });
 
-
                 if ( $(".responsive-header").is(":visible") ) {
 
                     $(".responsive-header").fadeOut(500);
@@ -172,10 +186,10 @@ $(document).ready(function() {
                     $(".respmenubtn").removeClass("active");
 
                     if( bodyWidth > 900  &&  promoBottomCoord > $(window).scrollTop()
-                    &&  parentBlock.is(":visible")) {
+                    &&  $(".respmenubtn-block").is(":visible")) {
 
                         $(".respmenubtn-block").fadeOut(300);
-                    
+
                     }
 
                 }
@@ -317,7 +331,6 @@ $(document).ready(function() {
         }
 
     }
-
 
     function getFooterPosition() {
 
