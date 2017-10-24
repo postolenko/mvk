@@ -2020,7 +2020,8 @@ textarea {
 }
 
 .article > p {
-    padding-bottom: 41px;
+    padding-top: 6px;
+    padding-bottom: 35px;
 }
 
 .article img {
