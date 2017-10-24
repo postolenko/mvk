@@ -2019,6 +2019,10 @@ textarea {
     margin: 0 auto 62px auto;
 }
 
+.article > p {
+    padding-bottom: 41px;
+}
+
 .article img {
     margin: 18px 0;
 }
