@@ -988,7 +988,7 @@ a.lang:hover {
 input {
     display: block;
     width: 100%;
-    hyphens: 46px;
+    height: 46px;
     border: 1px solid transparent;
     background: transparent;
     border-bottom: 1px solid #ffffff;
