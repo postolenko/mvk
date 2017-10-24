@@ -2019,7 +2019,7 @@ textarea {
     margin: 0 auto 62px auto;
 }
 
-.article > p {
+.article > p:nth-child(1) {
     padding-top: 6px;
     padding-bottom: 35px;
 }
