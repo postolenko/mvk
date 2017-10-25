@@ -355,6 +355,10 @@
 	    line-height: 96px;
 	}
 
+	.row {
+		padding: 0 4%;
+	}
+
 	header {
 	    margin: 41px 0;
 	}
@@ -362,6 +366,26 @@
 	header h2:after {
 		hyphens: 5px;
 	    margin: 19px auto;
+	}
+
+	.respmenubtn {
+		width: 33px;
+	}
+
+	.respmenubtn span {
+	    width: 27px;
+	}
+
+	.respmenubtn.active span {
+	    width: 32px;
+	}
+
+	.socials-block {
+		left: 4%;
+	}
+
+	.main-slider-block .next-slide-btn {
+	    right: 4%;
 	}
 
 	.single-h p {
@@ -627,6 +651,18 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+	.row {
+		padding: 0 5%;
+	}
+
+	.socials-block {
+		left: 6%;
+	}
+
+	.main-slider-block .next-slide-btn {
+	    right: 5%;
+	}
 
 	.single-h p {
 		text-align: left;
