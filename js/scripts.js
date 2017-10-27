@@ -306,6 +306,55 @@ $(document).ready(function() {
 
     }
 
+
+    function getGalleryImagesParams() {
+
+        var maxWidthBox, maxHeightBox;
+        var widthImg, heightImg;
+        var galleryImage;
+
+        // $(".gallery").each(function() {
+
+        //     $(this).find(".img-box").each(function() {
+
+        //         maxWidth = $(this).width();
+        //         maxHeight = $(this).height();
+
+        //         galleryImage = $(this).find("img");
+
+        //         widthImg = galleryImage.width();
+        //         heightImg = galleryImage.height();
+
+        //         if(widthImg < maxWidth) {
+
+        //             galleryImage.css({
+        //                 "min-width" : maxWidth + "px"
+        //             });
+
+        //         }
+
+        //         if(heightImg < maxHeight) {
+
+        //             galleryImage.css({
+        //                 "min-height" : maxHeight + "px"
+        //             });
+
+        //         }
+
+        //         if(widthImg > maxWidth && heigthImg > maxHeight) {
+
+        //             galleryImage.css({
+        //                 "-width" : maxWidth + "px"
+        //             });
+
+        //         }
+
+        //     });
+
+        // });
+
+    }
+
     function getSeoBlocksParam() {
 
         if( bodyWidth <= 768 ) {

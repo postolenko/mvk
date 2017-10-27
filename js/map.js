@@ -3,7 +3,7 @@ if( document.getElementsByClassName("map-block")[0] ) {
 	var map;
 
 	var marker;
-	// var image = 'img/map_marker.png';
+	var image = 'img/pin.svg';
 
 	var styles;
 
@@ -114,17 +114,17 @@ if( document.getElementsByClassName("map-block")[0] ) {
 			zoom: 13
 		});
 
-		// marker = new google.maps.Marker({
-		// 	map: map,
-		// 	draggable: false,
-		// 	animation: google.maps.Animation.DROP,
-		// 	position: {lat: 54.71995, lng: 25.2906968},
-		// 	map: map,
-		// 	icon: image,
-		// 	title: 'MVK'
-		// });
+		marker = new google.maps.Marker({
+			map: map,
+			draggable: false,
+			animation: google.maps.Animation.DROP,
+			position: {lat: 54.71995, lng: 25.2906968},
+			map: map,
+			icon: image,
+			title: 'MVK'
+		});
 
-		// marker.addListener('click', toggleBounce);
+		marker.addListener('click', toggleBounce);
 
 		//Associate the styled map with the MapTypeId and set it to display.
 		map.mapTypes.set('map_style', styledMap);

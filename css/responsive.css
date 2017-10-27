@@ -291,11 +291,11 @@
 	    height: 235px;
 	}
 
-	.gallery .thumbnal .img-box img.desk-img {
+	.gallery .thumbnal .img-box .img.desk-img {
 	    display: none;
 	}
 
-	.gallery .thumbnal .img-box img.resp-img {
+	.gallery .thumbnal .img-box .img.resp-img {
 	    display: block;
 	}
 
@@ -305,7 +305,7 @@
 
 	.services-thumbnails .thumbnal {
 	    width: 100%;
-	   	margin: 19px 0 55px 0;
+	   	padding: 23px 0 55px 0;
 	    padding: 0;
 	}
 
@@ -335,12 +335,12 @@
 		font-size: 40px;
 	    line-height: 48px;
 	}
-
+/*
 	.talk-block .talk-link:after {
 	    width: 91%;
 	    height: 4px;
 	    left: 3px;
-	}
+	}*/
 
 	.map-block #map {
 	    height: 290px;
@@ -407,8 +407,12 @@
 
 	.more-services .thumbnail {
 	    width: 100%;
-	    margin: 15px 0 36px 0;
+	    /*margin: 15px 0 36px 0;*/
 	    padding: 0;
+	}
+
+	.more-services .thumbnail .inner {
+		padding: 23px 3% 15px 3%;
 	}
 
 	.more-services p {
@@ -438,7 +442,7 @@
 		display: inline-block;
 		vertical-align: top;
 		cursor: pointer;
-	    padding: 0 7% 0 0;
+		padding: 0;
 	    font-size: 18px;
 	    line-height: 20px;
 	    border-bottom: 2px solid #ffffff;
@@ -491,6 +495,10 @@
 	header p {
 	    font-size: 16px;
 	    line-height: 33px;
+	}
+
+	.mobile-hidden {
+		display: none !important;
 	}
 
 	.popup {
@@ -669,7 +677,7 @@
 	}
 
 	.single-link {
-	    padding: 0 25px 4px 0;
+	    padding: 0 0 4px 0;
 	    font-size: 20px;
 	}
 
@@ -677,7 +685,14 @@
 	    margin: 0 auto 75px auto;
 	}
 
+	.prev-img-block {
+	    
+	}
+
 	img.full-img {
+		max-height: initial;
+		max-width: initial;
+		height: 296px;
 	    margin: 27px auto 42px auto;
 	}
 
@@ -710,21 +725,17 @@
 		height: 267px;
 	}
 
-	.gallery .thumbnal .img-box img.desk-img {
+	.gallery .thumbnal .img-box .img.desk-img {
 	    display: block;
 	}
 
-	.gallery .thumbnal .img-box img.resp-img {
+	.gallery .thumbnal .img-box .img.resp-img {
 	    display: none;
 	}
 
 	.services-thumbnails .thumbnal {
-	    margin: 28px 0 44px 0;
-	}
-
-	.services-thumbnails .thumbnal {
-	    width: 100%;
-	    margin: 28px 0 45px 0;
+		width: 100%;
+	    padding: 28px 0 45px 0;
 	}
 
 	.services-thumbnails .icon-box {
@@ -750,11 +761,11 @@
 	    margin: 51px 0 0 0;
 	}
 
-	.talk-block .talk-link:after {
+/*	.talk-block .talk-link:after {
 		width: 93%;
 	    top: -5px;
 	    left: 2px;
-	}
+	}*/
 
 	.talk-block .talk-arrom {
 		vertical-align: top;
